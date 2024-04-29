@@ -1,0 +1,65 @@
+{% load static %}
+
+<!-- FOOTER START -->
+<footer>
+
+    <div class="container">
+
+        <div class="sec aboutus">
+            <a class="navbar-brand fs-1 fw-bold mb-3" href="#"><img src="{% static 'img/news-icon2.png' %}" alt="gazete">THE NEWS</a>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fuga itaque dicta ullam praesentium
+                asperiores ipsum quibusdam voluptatem modi quo eos.</p>
+            <ul class="socials">
+                <li><a href="#"><i class="fa-brands fa-facebook-f"></i></a></li>
+                <li><a href="#"><i class="fa-brands fa-x-twitter"></i></a></li>
+                <li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
+                <li><a href="#"><i class="fa-brands fa-youtube"></i></a></li>
+            </ul>
+        </div>
+        <div class="sec quicklinks">
+            <h2>Kategoriler</h2>
+            <ul class="list-unstyled">
+                <li><a href="{% url 'category_page' %}">Spor</a></li>
+                <li><a href="{% url 'category_page' %}">Siyaset</a></li>
+                <li><a href="{% url 'category_page' %}">Ekonomi</a></li>
+                <li><a href="{% url 'category_page' %}">Eğitim</a></li>
+                <li><a href="{% url 'category_page' %}">Dünya</a></li>
+                <li><a href="{% url 'category_page' %}">Teknoloji</a></li>
+                <li><a href="{% url 'category_page' %}">Seyahat</a></li>
+            </ul>
+        </div>
+        <div class="sec quicklinks">
+            <h2>Hakkımızda</h2>
+            <ul class="list-unstyled">
+                <li><a href="">SSS</a></li>
+                <li><a href="">Kullanım Koşulları</a></li>
+                <li><a href="">Gizlilik Politikası</a></li>
+                <li><a href="">Çerezler</a></li>
+            </ul>
+        </div>
+        <div class="sec quicklinks contact">
+            <h2>Bize Ulaşın</h2>
+            <ul class="info list-unstyled">
+                <li>
+                    <span><i class="fa-solid fa-phone"></i></span>
+                    <p><a href="tel:+443332002434">+44 (0)333 200 2434</a></p>
+                </li>
+                <li>
+                    <span><i class="fa-regular fa-envelope"></i></span>
+                    <p><a href="mailto:london@thegazette.co.uk">london@thegazette.co.uk</a></p>
+                </li>
+                <li>
+                    <span><i class="fa-solid fa-circle-dollar-to-slot"></i></span>
+                    <p><a href="{% url 'donate_page' %}">Bağış yapın</a></p>
+                </li>
+            </ul>
+        </div>
+
+    </div>
+
+</footer>
+
+<div class="copyrightText">
+    <p>Copyright © 2023 Tüm hakları saklıdır. THE GAZETTE</p>
+</div>
+<!-- FOOTER END -->
